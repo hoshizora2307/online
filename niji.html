@@ -215,7 +215,7 @@ el("tNames").addEventListener("click",()=>{
 });
 
 const whyBtn=el("whyBtn"),fact=el("fact");
-whyBtn.addEventListener("click",()=>{const open=fact.classList.toggle("open");whyBtn.setAttribute("aria-expanded",open);whyBtn.textContent=open?"とじる 🙌":"もっと くわしく 🔭";});
+whyBtn.addEventListener("click",()=>{const open=fact.classList.toggle("open");fact.style.maxHeight=open?fact.scrollHeight+"px":"0px";whyBtn.setAttribute("aria-expanded",open);whyBtn.textContent=open?"とじる 🙌":"もっと くわしく 🔭";});
 </script>
 </body>
 </html>
